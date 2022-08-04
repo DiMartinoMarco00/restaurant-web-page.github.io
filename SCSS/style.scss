@@ -1,0 +1,37 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body 
+{
+    min-height: 1000px;
+}
+
+p 
+{
+    font-weight: 300;
+    color: #111;
+}
+
+section
+{
+    padding: 100px
+}
+
+@import 'variables';
+@import 'mixin';
+@import 'header';
+@import 'banner';
+@import 'about';
+@import 'menu';
+@import 'chef';
+@import 'testimonials';
+@import 'contact';
+@import 'copyright';
+@import 'media-query';
+

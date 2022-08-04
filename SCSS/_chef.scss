@@ -1,0 +1,35 @@
+.chef
+{
+    .content
+    {
+        @include content(row);
+
+        .box
+        {
+            width: 250px;
+            margin: 15px;
+
+            .imgBx
+            {
+                @include img_box(100%, 300px);
+
+                img 
+                {
+                    @include img_fluid;
+                }
+            }
+
+            .text
+            {
+                padding: 15px 0 5px;
+
+                h3 
+                {
+                    font-weight: 400;
+                    color: #111;
+                }
+            }
+        }/* fine div .box*/
+    }/*fine div .content*/
+}/*fine div .chef*/
+

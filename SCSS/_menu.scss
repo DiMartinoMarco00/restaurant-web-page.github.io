@@ -1,0 +1,45 @@
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu
+{
+    .content
+    {
+        @include content(row-reverse);
+
+        .box
+        {
+            width: 340px;
+            margin: 20px;
+            border: 15px solid #fff;
+            box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+
+            .imgBx
+            {
+                @include img_box(100%, 300px);
+
+                img 
+                {
+                    @include img_fluid;
+                }
+            }
+
+            .text
+            {
+                padding: 15px 0 5px;
+
+                h3 
+                {
+                    font-weight: 400;
+                    color: #111;
+                }
+            }
+        }/*fine .box*/
+    }/*fine .content*/
+}/*fine .menu*/

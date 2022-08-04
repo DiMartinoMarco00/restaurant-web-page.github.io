@@ -1,0 +1,18 @@
+.copyright
+{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+
+    p 
+    {
+        color: #333;
+    }
+
+    span 
+    {
+        color: $secondary-color;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}

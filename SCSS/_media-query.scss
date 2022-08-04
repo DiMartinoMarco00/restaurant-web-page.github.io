@@ -1,0 +1,416 @@
+/*per tablet normali fino an desktop piccoli*/
+@media only screen and (min-width: 768px) and (max-width: 959px) 
+{
+    header, 
+    header.sticky
+    {
+        padding: 30px 30px;
+    }
+
+    .navigation 
+    {
+        li 
+        {
+            margin-left: 10px;
+
+            a 
+            {
+                font-size: 0.9em;
+            }
+        }
+    }
+
+    section 
+    {
+        padding: 25px;
+    }
+
+    .banner .content  
+    {
+        h2 
+        {
+            font-size: 3.2em;
+        }
+
+        p 
+        {
+            font-size: 0.9em;
+        }
+
+        .btn 
+        {
+            margin-top: 40px;
+        }
+    }
+
+    .about 
+    {
+        p 
+        {
+            font-size: 0.9em;
+        }
+
+        .imgBx 
+        {
+           margin-top: 50px;
+           height: 275px !important;
+        }
+    }
+
+    .title p 
+    {
+        font-size: 0.9em;
+    }
+
+    .menu .imgBx
+    {
+        height: 275px !important;
+    }
+
+    .chef 
+    {
+        margin-top: 75px;
+    }
+
+    .testimonials .imgBx
+    {
+        height: 75px !important;
+        width: 75px !important; 
+    }
+
+    .text 
+    {
+        p 
+        {
+            font-size: 0.9em;
+        }
+
+        h3 
+        {
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 959px)
+{
+    .navigation li a 
+    {
+        font-size: 1em;
+    }
+}
+
+
+@media only screen and (max-width: 767px) 
+{
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+
+    header
+    {
+        .navigation 
+        {
+            display: none;
+
+            li 
+            {
+                margin-left: 0;
+
+                a 
+                {
+                    color: #111;
+                    font-size: 1.6em;
+                }
+            }
+        } 
+
+        .navigation.active 
+        {
+            width: 100%;
+            height: calc(100% - 65px);
+            position: fixed;
+            top: 65px; 
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #fff; 
+
+            li   
+            {
+                margin-top: 15px;
+    
+                a 
+                {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }//fine header
+
+    .menu-toggle
+    {
+       position: relative;
+       width: 40px;
+       height: 40px;
+       background-image: url(../images/hamburgger-icon.png);
+       background-size: 30px;
+       background-repeat: no-repeat;
+       background-position: center;
+       cursor: pointer;
+    }
+
+    .menu-toggle.active
+    {
+        background-image: url(../images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header.sticky .menu-toggle
+    {
+        /*
+            fa si che l' icona close o l' hamburggers-icon diventino di colore nero quando 
+            avviene uno scroll verso il basso,
+            e di nuovo bianche quando si ritorna al punto di partenza con la scrollbar
+        */
+        filter: invert(1);
+    }
+
+    section 
+    {
+        padding: 20px;
+    }
+
+    .banner .content
+    {
+        h2 
+        {
+            font-size: 2em;
+        }
+        
+        p 
+        {
+            margin-top: 15px;
+            font-size: 0.8em;
+            padding: 0;
+        }
+
+        .btn
+        {
+            margin-top: 30px;
+        }
+    }
+
+
+    .row
+    {
+        flex-direction: column;
+
+        .col-50
+        {
+            width: 100%;
+        }
+    }
+
+    .menu
+    {
+        .content
+        {
+            margin-top: 20px;
+
+            .box 
+            {
+                margin: 10px;
+            }
+        }
+    }
+
+    .testimonials
+    {
+        .content 
+        {
+            .box 
+            {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            .imgBx
+            {
+                width: 60px !important;
+                height: 60px !important;
+            }
+        }
+
+        .text p 
+        {
+            font-size: 0.85em;
+        }
+    }
+
+    .about
+    {
+        p 
+        {
+            text-align: center;
+            font-size: 0.85em;
+            margin-bottom: 20px;
+        }
+    }
+   
+    .chef
+    {
+        .titleText
+        {
+            margin-top: 50px;
+            line-height: 45px;
+        }
+
+        .title p 
+        {
+            margin-top: 15px;
+        }
+    }
+
+    .copyright p  
+    {
+        font-size: 13px;
+    }
+
+    .contact .title p 
+    {
+        margin-top: 5px;
+    }
+
+    .contact-form
+    {
+        padding: 35px 25px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        h3 
+        {
+            text-align: center;
+        }
+
+        input[type="submit"]
+        {
+            margin-top: 20px;
+        }
+    }
+
+    .title
+    {
+        p 
+        {
+            text-align: center;
+            font-size: 0.85em;
+        }
+
+        .btn 
+        {
+            margin-top: 40px;
+        }
+    }
+
+    .titleText
+    {
+        text-align: center;
+    }
+
+    .imgBx
+    {
+        height: 225px !important;
+    }
+
+    .text h3 
+    {
+        text-align: center;
+    }
+}/*fine media query*/
+
+
+/*per smartphone grandi e tablet piccoli*/
+@media only screen and (min-width: 600px) and (max-width: 767px)
+{
+    section 
+    {
+        padding: 40px;
+    }
+
+    .navigation.active
+    {
+        li   
+        {
+            margin-top: 20px;
+
+            a 
+            {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .banner .content 
+    {
+        h2 
+        {
+            font-size: 3em;
+        }
+
+        p 
+        {
+            font-size: 0.92em;
+        }
+    }
+
+    .about 
+    {
+        p 
+        {
+            font-size: 0.92em;
+        }
+
+        .imgBx
+        {
+            height: 425px !important;
+        }
+    }
+
+    .title p,
+    .testimonials .text p 
+    {
+        font-size: 0.92em;
+    }
+}
+
+@media only screen and (min-width: 350px)
+{
+    .menu .imgBx
+    {
+        height: 260px !important;
+    }
+}
+
+@media only screen and (max-height: 499px) 
+{
+    .banner .content 
+    {
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (min-height: 650px) 
+{
+    .banner 
+    {
+        min-height: 80vh;
+    }
+}
